@@ -14,7 +14,7 @@ def rec(x, y, k):
     count = sum(rec(x+dx, y+dy, k-1) for dx,dy in (1,0), (0,1), (-1,0), (0,-1))
     grid[x][y] = 0
     return count
-        
+
 for i in range(int(input())):
     n = int(input())
     grid = [list(map(int, input().split())) for i in range(n)]
